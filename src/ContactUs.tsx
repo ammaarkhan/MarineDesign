@@ -2,6 +2,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import styles from './ContactUs.module.css';
+import { handleSubmit } from './handleSubmit';
 
 function ContactUs() {
   const [form, setForm] = useState({
@@ -22,47 +23,10 @@ function ContactUs() {
     });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .send(
-        'service_8uv1p6l',
-        'template_lt68v8y',
-        {
-          from_name: form.name,
-          to_name: "Ammaar",
-          from_email: form.email,
-          to_email: "ammaarkhan03@gmail.com",
-          message: form.message,
-        },
-        'xY6XZCeqxsKRQbkiI'
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
-  };
-
   return (
     <div className={styles.formContainer}>
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className={styles.heading}>Contact Us</h2>
+      <form onSubmit={(e)=> handleSubmit(e, form, setLoading, setForm)}>
         <label className={styles.formLabel}>
           Name
           <input type="text" name="name" value={form.name} onChange={handleChange} />
