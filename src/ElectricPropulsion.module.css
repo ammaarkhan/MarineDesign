@@ -1,0 +1,38 @@
+/* src/HomePage.module.css */
+/* HomePage.module.css */
+.darkBlueBackground {
+    background-color: #183049;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navyBlueBackground {
+    background-color: navy;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .imageSection {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  
