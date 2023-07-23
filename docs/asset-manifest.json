@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b72b789.css",
-    "main.js": "/static/js/main.6b022314.js",
-    "static/js/787.5e20857a.chunk.js": "/static/js/787.5e20857a.chunk.js",
-    "index.html": "/index.html",
-    "main.6b72b789.css.map": "/static/css/main.6b72b789.css.map",
-    "main.6b022314.js.map": "/static/js/main.6b022314.js.map",
-    "787.5e20857a.chunk.js.map": "/static/js/787.5e20857a.chunk.js.map"
+    "main.css": "/marinedesign/static/css/main.6b72b789.css",
+    "main.js": "/marinedesign/static/js/main.5d00bad1.js",
+    "static/js/787.5e20857a.chunk.js": "/marinedesign/static/js/787.5e20857a.chunk.js",
+    "index.html": "/marinedesign/index.html",
+    "main.6b72b789.css.map": "/marinedesign/static/css/main.6b72b789.css.map",
+    "main.5d00bad1.js.map": "/marinedesign/static/js/main.5d00bad1.js.map",
+    "787.5e20857a.chunk.js.map": "/marinedesign/static/js/787.5e20857a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b72b789.css",
-    "static/js/main.6b022314.js"
+    "static/js/main.5d00bad1.js"
   ]
 }
