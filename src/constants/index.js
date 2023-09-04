@@ -5,7 +5,7 @@ export const navLinks = [
     type: "route"
   },
   {
-    id: "/#/projects",
+    id: "/#projects",
     title: "Projects",
     type: "route"
   },
