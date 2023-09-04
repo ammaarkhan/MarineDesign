@@ -2,27 +2,26 @@ import { people01, people02, people03, facebook, instagram, linkedin, twitter, a
 
 export const navLinks = [
   {
-    id: "/",
+    id: "/marinedesign",
     title: "Home",
     type: "route"
   },
   {
-    id: "/#projects",
+    id: "/marinedesign/#projects",
     title: "Projects",
     type: "route"
   },
   {
-    id: "/joinus",
+    id: "/marinedesign/joinus",
     title: "Join Us",
     type: "route"
   },
   {
-    id: "/sponsorships",
+    id: "/marinedesign/sponsorships",
     title: "Sponsorships",
     type: "route"
   },
 ];
-
 
 export const features = [
   {

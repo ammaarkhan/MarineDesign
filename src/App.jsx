@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import styles from './style';
 import { Navbar, Hero, About, Ourgoal, Ourprojects, Footer, Sponsorships, Joinus } from './components';
 import { scrollToHash } from './constants';
@@ -28,7 +28,7 @@ const Main = () => {
       </div>
       
       <Routes>
-        <Route path="/" element={
+        <Route path="/marinedesign" element={
           <div className={`${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Hero />
@@ -40,7 +40,7 @@ const Main = () => {
           </div>
         } />
         
-        <Route path="/sponsorships" element={
+        <Route path="/marinedesign/sponsorships" element={
           <div className={`${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Sponsorships />
@@ -49,7 +49,7 @@ const Main = () => {
           </div>
         } />
 
-        <Route path="/joinus" element={
+        <Route path="/marinedesign/joinus" element={
           <div className={`${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Joinus />
