@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 const About = () => {
   return (
     <section className="flex flex-col md:flex-row justify-center md:justify-between items-center py-8 md:py-12 px-4 md:px-12 bg-white"
-    style={{height: 'auto md:65vh'}}>
+    style={{height: 'auto md:75vh'}}>
       
       {/* Image on the Left */}
       <div className="flex-1 mb-8 md:mb-0">
-        <img src={aboutus} alt="Okanagan valley" className="sm:max-w-[600px] max-w-[450px] h-auto mx-auto" />
+      <img src={aboutus} alt="Okanagan valley" className="sm:w-3/4 w-4/5 h-auto mx-auto max-w-[600px]" />
+
       </div>
       
       {/* Text Content on the Right */}

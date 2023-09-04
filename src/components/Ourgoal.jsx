@@ -4,7 +4,7 @@ import { ourgoals } from '../assets';
 const Ourgoal = () => {
   return (
     <section className="flex flex-col md:flex-row justify-center md:justify-between bg-[#183049] items-center py-8 md:py-12 px-4 md:px-12"
-      style={{height: '65vh'}}>
+      style={{height: '75vh'}}>
         
         <div className="flex-1 flex flex-col justify-center items-center p-4 md:p-6">
           <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Our Goals</h2>
@@ -15,7 +15,7 @@ const Ourgoal = () => {
 
          {/* Image on the Right */}
          <div className="flex-1 mb-8 md:mb-0">
-         <img src={ourgoals} alt="Okanagan valley" className="sm:max-w-[600px] max-w-[450px] h-auto mx-auto" />
+         <img src={ourgoals} alt="Okanagan valley" className="sm:w-3/4 w-4/5 h-auto mx-auto max-w-[600px]" />
         </div>
     </section>
   );
