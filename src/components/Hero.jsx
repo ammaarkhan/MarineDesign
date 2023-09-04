@@ -4,7 +4,7 @@ import styles from '../style';
 const Hero = () => (
   <section 
     id='home' 
-    className={`relative flex md:flex-row flex-col ${styles.paddingY} bg-[#183049] justify-center items-center`}
+    className={`flex md:flex-row flex-col ${styles.paddingY} bg-[#183049] justify-center items-center`}
     // style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}
     style={{height: '55vh'}}
   >
