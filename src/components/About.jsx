@@ -1,5 +1,5 @@
 import React from 'react';
-import { aboutus, ourgoals } from '../assets';
+import { aboutus } from '../assets';
 
 const About = () => {
   return (
