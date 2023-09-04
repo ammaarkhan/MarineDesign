@@ -9,13 +9,13 @@ const Ourgoal = () => {
         <div className="flex-1 flex flex-col justify-center items-center p-4 md:p-6">
           <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">Our Goals</h2>
           <p className="text-sm md:text-base leading-relaxed text-gray-300 mb-4">
-              This is a sample paragraph. We'll provide more detailed information about who we are and what we do here at UBC Okanagan's Marine Design Club. Our mission, goals, and the inspiration behind our endeavors will be outlined here.
+            Our ambition is to compete at the forefront of engineering competitions, specializing in electric propulsion boats and autonomous underwater vehicles. Rooted in the heart of the Okanagan, we leverage the pristine waters of the Okanagan Lake as our proving ground. Through these challenges, our commitment is not just to produce state-of-the-art marine designs, but also to cultivate the next generation of exceptional engineers.
           </p>
         </div>
 
          {/* Image on the Right */}
          <div className="flex-1 mb-8 md:mb-0">
-          <img src={ourgoals} alt="Description of the Image" className="max-w-full h-auto mx-auto" />
+         <img src={ourgoals} alt="Okanagan valley" className="sm:max-w-[600px] max-w-[450px] h-auto mx-auto" />
         </div>
     </section>
   );

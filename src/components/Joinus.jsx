@@ -19,9 +19,10 @@ function Joinus() {
     };
 
     return (
-        <section id='joinus' className="bg-[#183049] py-12 px-4 md:px-12">
+        <section id='joinus' className="bg-[#183049] py-12 px-4 md:px-12 min-h-[75vh] flex flex-col justify-between">
             <h2 className="text-center text-2xl md:text-4xl font-bold mb-8 text-white">Join the Marine Design Team!</h2>
-            <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto">
+                <div className="flex-grow flex flex-col justify-center">
+                <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto">
                 <div className="mb-6">
                     <label htmlFor="name" className="block mb-2 text-sm font-semibold text-white">Name:</label>
                     <input 
@@ -30,6 +31,7 @@ function Joinus() {
                         name="user_name" 
                         className="w-full p-2 border border-gray-300 rounded-md"
                         required
+                        style={{ width: '500px' }}
                     />
                 </div>
                 <div className="mb-6">
@@ -58,7 +60,8 @@ function Joinus() {
                     </button>
                     {messageSent && <p className="mt-4 text-sm text-white">Thank you for your interest! We will get back to you soon.</p>}
                 </div>
-            </form>
+                </form>
+                </div>
         </section>
     );
 }

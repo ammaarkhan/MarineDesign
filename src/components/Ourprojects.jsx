@@ -14,17 +14,17 @@ const Ourprojects = () => {
       <div className="flex flex-col md:flex-row w-full md:space-x-8 space-y-8 md:space-y-0 items-center">
         <div className="flex-1 flex flex-col items-center">
           {/* <span className="text-2xl font-bold mb-4 text-[#183049]">Electric Propulsion</span> */}
-          <img src={peplogo} alt="Description of the Image" className="w-[450px] h-auto mx-auto" />
+          <img src={peplogo} alt="Description of the Image" className="md:max-w-[350px] max-w-[280px] h-auto mx-auto" />
         </div>
 
         <div className="flex-1 flex flex-col items-center">
           {/* <span className="text-2xl font-bold mb-4 text-[#183049]">Electric Propulsion</span> */}
-          <img src={monacologo} alt="Description of the Image" className="w-[450px] h-auto mx-auto" />
+          <img src={monacologo} alt="Description of the Image" className="md:max-w-[350px] max-w-[280px] h-auto mx-auto" />
         </div>
 
         <div className="flex-1 flex flex-col items-center">
           {/* <span className="text-2xl font-bold mb-4 text-[#183049]">AUV</span> */}
-          <img src={robosub} alt="Description of the Image" className="w-[450px] h-auto mx-auto" />
+          <img src={robosub} alt="Description of the Image" className="md:max-w-[350px] max-w-[280px] h-auto mx-auto" />
         </div>
       </div>
     </section>

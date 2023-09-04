@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const closeNavbar = () => {
+    setToggle(false);
+};
   
   return (
     <nav className='w-full flex py-0 justify-between items-center bg-white navbar'>
@@ -48,11 +51,11 @@ const Navbar = () => {
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mr-10"} text-black`}
               >
                 {nav.type === "route" ? 
-                  <Link to={nav.id}>
+                  <Link to={nav.id} onClick={closeNavbar}>
                     {nav.title}
                   </Link> 
                   : 
-                  <a href={`#${nav.id}`}>
+                  <a href={`#${nav.id}`}  onClick={closeNavbar}>
                     {nav.title}
                   </a>
                 }
