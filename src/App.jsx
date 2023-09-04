@@ -2,7 +2,6 @@ import React from 'react';
 import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import styles from './style';
 import { Navbar, Hero, About, Ourgoal, Ourprojects, Footer, Sponsorships, Joinus } from './components';
-import { scrollToHash } from './constants';
 
 const Main = () => {
   const location = useLocation();
@@ -28,7 +27,7 @@ const Main = () => {
       </div>
       
       <Routes>
-        <Route path="/marinedesign" element={
+        <Route path="/" element={
           <div className={`${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Hero />
@@ -40,7 +39,7 @@ const Main = () => {
           </div>
         } />
         
-        <Route path="/marinedesign/sponsorships" element={
+        <Route path="/sponsorships" element={
           <div className={`${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Sponsorships />
@@ -49,7 +48,7 @@ const Main = () => {
           </div>
         } />
 
-        <Route path="/marinedesign/joinus" element={
+        <Route path="/joinus" element={
           <div className={`${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Joinus />
