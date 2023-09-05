@@ -22,7 +22,7 @@ function Sponsorships() {
         <section id='sponsorships' className="bg-[#183049] py-12 px-4 md:px-12 min-h-[75vh] flex flex-col justify-between">
             <h2 className="text-center text-2xl md:text-4xl font-bold mb-8 text-white">Interested in sponsoring us? Contact us below!</h2>
             <div className="flex-grow flex flex-col justify-center">
-                <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto">
+                <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg mx-auto">
                 <div className="mb-6">
                     <label htmlFor="name" className="block mb-2 text-sm font-semibold text-white">Name:</label>
                     <input 
@@ -31,7 +31,6 @@ function Sponsorships() {
                         name="user_name" 
                         className="w-full p-2 border border-gray-300 rounded-md"
                         required
-                        style={{ width: '500px' }}
                     />
                 </div>
                 <div className="mb-6">
