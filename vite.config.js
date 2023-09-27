@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/marinedesign/', // replace 'repository-name' with your actual repo name
+  base: '/', // replace 'repository-name' with your actual repo name
   build: {
     outDir: 'docs',
     rollupOptions: {
