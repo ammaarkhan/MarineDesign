@@ -31,7 +31,7 @@ const Main = () => {
         <Route path="/" element={
           <div className={`${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
-              <Hero/>
+              <Hero />
               <About />
               <Ourgoal />
               <Ourprojects />
