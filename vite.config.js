@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/marinedesign/', // replace 'repository-name' with your actual repo name
   build: {
+    outDir: 'docs',
     rollupOptions: {
       output: {
         // This is a fix to ensure assets and relative paths work correctly on GitHub Pages
