@@ -1,36 +1,37 @@
-import {useState} from 'react'
-import { navLinks } from '../constants'
-import {close, logo, menu} from '../assets';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { navLinks } from "../constants";
+import { close, logo, menu } from "../assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const closeNavbar = () => {
     setToggle(false);
-};
-  
+  };
+
   return (
-    <nav className='w-full flex py-0 justify-between items-center bg-white navbar'>
-      
+    <nav className="w-full flex py-0 justify-between items-center bg-white navbar md:px-6">
       <Link to="/">
-        <img src={logo} alt="marine design" className='w-[190px] h-[190px] -ml-9 -mt-10 -mb-7' />
+        <img
+          src={logo}
+          alt="marine design"
+          className="w-[190px] h-[190px] -ml-9 -mt-10 -mb-7"
+        />
       </Link>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mr-10"} text-black`}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+              index === navLinks.length - 1 ? "mr-0" : "mr-10"
+            } text-black`}
           >
-            {nav.type === "route" ? 
-              <Link to={nav.id}>
-                {nav.title}
-              </Link> 
-              : 
-              <a href={`#${nav.id}`}>
-                {nav.title}
-              </a>
-            }
+            {nav.type === "route" ? (
+              <Link to={nav.id}>{nav.title}</Link>
+            ) : (
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            )}
           </li>
         ))}
       </ul>
@@ -51,24 +52,26 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mr-10"} text-black`}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                  index === navLinks.length - 1 ? "mr-0" : "mr-10"
+                } text-black`}
               >
-                {nav.type === "route" ? 
+                {nav.type === "route" ? (
                   <Link to={nav.id} onClick={closeNavbar}>
                     {nav.title}
-                  </Link> 
-                  : 
-                  <a href={`#${nav.id}`}  onClick={closeNavbar}>
+                  </Link>
+                ) : (
+                  <a href={`#${nav.id}`} onClick={closeNavbar}>
                     {nav.title}
                   </a>
-                }
+                )}
               </li>
             ))}
           </ul>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;

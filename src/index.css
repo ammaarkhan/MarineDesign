@@ -138,3 +138,12 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
