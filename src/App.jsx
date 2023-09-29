@@ -34,12 +34,7 @@ const Main = () => {
   return (
     <div className="bg-blue-50 w-full overflow-hidden">
       <div className="relative min-h-screen">
-        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-          <div className={`${styles.boxWidth}`}>
-            <Navbar />
-            {/* <div>hi</div> */}
-          </div>
-        </div>
+        <Navbar />
 
         <div className="pb-20">
           <Routes>

@@ -20,7 +20,7 @@ const About = () => {
         <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#183049]">
           Who are we?
         </h2>
-        <p className="text-sm md:text-base leading-relaxed text-gray-700 mb-4">
+        <p className="text-sm md:text-base leading-relaxed text-gray-700 mb-4 max-w-xl">
           We're thrilled to introduce Okanagan Marine Design at UBC Okanagan. We
           have two main focus areas: Electric Propulsion Boats and Autonomous
           Underwater Vehicles. This is the first and only club at UBCO dedicated
