@@ -7,11 +7,11 @@ import Button from "./Button";
 const About = () => {
   return (
     <section
-      className="flex flex-col md:flex-row justify-center md:justify-between items-center py-8 md:py-12 px-4 md:px-12 bg-white"
+      className="flex flex-col md:flex-row justify-center md:justify-between items-center py-8 md:py-12 px-4 md:px-12"
       style={{ height: "auto md:75vh" }}
     >
       {/* Image on the Left */}
-      <div className="flex-1 mb-8 md:mb-0">
+      <div className="flex-1 mb-8 md:mb-0 max-w-md">
         <ImageContainer src={aboutus} alt="Okanagan valley" />
       </div>
 
@@ -27,9 +27,11 @@ const About = () => {
           to autonomous vehicles! If you're as passionate about engineering and
           technology as we are, this club is your next port of call.
         </p>
-        <Button type="link" href="/joinus">
-          Join Us
-        </Button>
+        <div>
+          <Button type={"link"} href="/joinus">
+            Join Us
+          </Button>
+        </div>
       </div>
     </section>
   );

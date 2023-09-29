@@ -32,7 +32,7 @@ const Main = () => {
   }, [location]);
 
   return (
-    <div className="bg-white w-full overflow-hidden">
+    <div className="bg-blue-50 w-full overflow-hidden">
       <div className="relative min-h-screen">
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
@@ -41,7 +41,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="pb-12">
+        <div className="pb-20">
           <Routes>
             <Route
               path="/"
