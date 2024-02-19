@@ -6,6 +6,7 @@ import ourgoals from "./our-goals.png";
 import robosub from "./robosub.png";
 import monacologo from "./monaco.png";
 import peplogo from "./peplogo.png";
+import teamimage from "./team-image.png";
 
 export {
   logo,
@@ -16,4 +17,5 @@ export {
   robosub,
   monacologo,
   peplogo,
+  teamimage,
 };

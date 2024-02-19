@@ -20,7 +20,7 @@ function Footer() {
               <FaInstagram size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/company/okanagan-marine-design/about/"
+              href="https://www.linkedin.com/company/okanagan-marine-design/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-600 transition duration-300"
