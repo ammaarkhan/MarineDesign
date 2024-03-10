@@ -15,7 +15,7 @@ const Hero = () => (
         loop
         muted
         playsInline
-        className="absolute z-0 w-full h-full object-cover rounded-2xl" // Optionally add rounded-2xl here for consistency
+        className="absolute z-0 w-full h-full object-cover rounded-2xl"
       >
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.

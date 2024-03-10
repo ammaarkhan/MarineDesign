@@ -76,6 +76,7 @@ const Navbar = () => {
                     ease: "easeInOut",
                   }}
                   className="flex p-6 shadow-lg absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl bg-white"
+                  style={{ zIndex: 1000 }}
                 >
                   <ul className="list-none flex justify-end items-start flex-1 flex-col">
                     {navLinks.map((nav, index) => (
