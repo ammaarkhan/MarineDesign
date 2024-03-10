@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "./Button";
-import { teamimage } from "../assets";
+import { teamimage, altium } from "../assets";
 
 function Sponsorships() {
   const form = useRef();
@@ -28,6 +28,11 @@ function Sponsorships() {
         }
       );
   };
+
+  const sponsorImages = [
+    { src: altium, alt: "Altium" },
+    // Add more sponsors as needed
+  ];
 
   return (
     <div className="px-4 md:px-12 xl:px-0">
@@ -117,6 +122,19 @@ function Sponsorships() {
               className="w-5/6 h-auto rounded-lg mb-6"
             />
           </div>
+        </div>
+      </section>
+      {/* Current Sponsors Section */}
+      <section className="py-12 px-4 md:px-12">
+        <h2 className="text-center text-2xl md:text-4xl font-bold mb-2">
+          Our Current Sponsors
+        </h2>
+        <div className="flex flex-wrap justify-center items-center gap-8">
+          {sponsorImages.map((sponsor, index) => (
+            <div key={index} className="w-40 md:w-56">
+              <img src={sponsor.src} alt={sponsor.alt} className="w-full h-auto object-contain" />
+            </div>
+          ))}
         </div>
       </section>
     </div>
