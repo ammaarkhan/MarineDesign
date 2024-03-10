@@ -1,16 +1,26 @@
 import React from "react";
 import styles from "../style";
+import videoSrc from "../assets/sub-video.mp4";
 
 const Hero = () => (
   <div className="px-4 md:px-12">
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY} bg-[#183049] justify-center items-center rounded-2xl`}
-      // style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}
-      style={{ height: "55vh" }}
+      className={`flex md:flex-row flex-col ${styles.paddingY} justify-center items-center rounded-2xl relative`}
+      style={{ height: "55vh", overflow: "hidden" }} // Add overflow: hidden to the section style
     >
-      {/* Overlay to darken the image a bit and make text more readable */}
-      {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
+      {/* Video as Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute z-0 w-full h-full object-cover rounded-2xl" // Optionally add rounded-2xl here for consistency
+      >
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       {/* Content */}
       <div className="relative z-10 w-full text-center">
         <h1 className={`${styles.heading2} my-4`}>Marine Design Club</h1>

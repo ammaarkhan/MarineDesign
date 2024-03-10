@@ -7,6 +7,8 @@ import robosub from "./robosub.png";
 import monacologo from "./monaco.png";
 import peplogo from "./peplogo.png";
 import teamimage from "./team-image.png";
+import whoarewe from "./who-are-we.jpg";
+import altium from "./altium.svg";
 
 export {
   logo,
@@ -18,4 +20,6 @@ export {
   monacologo,
   peplogo,
   teamimage,
+  whoarewe,
+  altium,
 };

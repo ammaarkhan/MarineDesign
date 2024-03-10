@@ -1,6 +1,5 @@
 import React from "react";
-import { aboutus } from "../assets";
-import { Link } from "react-router-dom";
+import { whoarewe } from "../assets";
 import ImageContainer from "./ImageContainer";
 import Button from "./Button";
 
@@ -11,8 +10,12 @@ const About = () => {
       style={{ height: "auto md:75vh" }}
     >
       {/* Image on the Left */}
-      <div className="flex-1 mb-8 md:mb-0 max-w-md">
-        <ImageContainer src={aboutus} alt="Okanagan valley" />
+      <div className="flex-1 mb-8 md:mb-0 flex justify-center">
+        <ImageContainer
+          src={whoarewe}
+          alt="Okanagan valley"
+          className="sm:w-2/4 md:w-4/5 lg:w-5/6 xl:w-6/6 h-auto mx-auto"
+        />
       </div>
 
       {/* Text Content on the Right */}
