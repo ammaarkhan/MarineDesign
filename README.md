@@ -15,4 +15,4 @@ Local Testing:
 Building:
 ```npm run build```
 
-After making changes, run the build command, commit, and push to GitHub. GH actions will update the website.
+After making changes, simply commit, and push to GitHub. GH actions will update the website. Running the build command is not needed.
