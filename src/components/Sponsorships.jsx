@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "./Button";
 import { teamimage, altium } from "../assets";
+import bloomTechnical from "../assets/BloomTechnicalLogo.png";
+
 
 function Sponsorships() {
   const form = useRef();
@@ -31,6 +33,7 @@ function Sponsorships() {
 
   const sponsorImages = [
     { src: altium, alt: "Altium" },
+    { src: bloomTechnical, alt: "Bloom Technical" },
     // Add more sponsors as needed
   ];
 
