@@ -25,7 +25,7 @@ const Hero = () => (
       <div className="relative z-10 w-full text-center">
         <h1 className={`${styles.heading2} my-4`}>Marine Design Club</h1>
         <p className={`${styles.paragraph} mb-8`}>
-          Crafting the Future of Marine Design at UBC Okanagan.
+          Crafting the Future of Marine Robotics at UBC Okanagan.
         </p>
       </div>
     </section>
