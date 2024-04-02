@@ -12,12 +12,11 @@ const Ourgoal = () => {
           </h2>
           <p className="text-sm md:text-base leading-relaxed text-gray-300 mb-4">
             Our ambition is to compete at the forefront of engineering
-            competitions, specializing in electric propulsion boats and
-            autonomous underwater vehicles. Rooted in the heart of the Okanagan,
-            we leverage the pristine waters of the Okanagan Lake as our proving
-            ground. Through these challenges, our commitment is not just to
-            produce state-of-the-art marine designs, but also to cultivate the
-            next generation of exceptional engineers.
+            competitions, specializing in autonomous underwater vehicles.
+            Rooted in the heart of the Okanagan, we leverage the pristine waters 
+            of the Okanagan Lake as our proving ground. Through these challenges, 
+            our commitment is not just to produce state-of-the-art marine designs, 
+            but also to cultivate the next generation of exceptional engineers.
           </p>
         </div>
 
