@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import Button from "./Button";
 import { teamimage, altium } from "../assets";
 import bloomTechnical from "../assets/BloomTechnicalLogo.png";
-import RMMC from "src/assets/Rocky_Mt_Logo Motion Control black text.png";
+import RMMC from "src/assets/RMMC_Logo";
 
 
 
