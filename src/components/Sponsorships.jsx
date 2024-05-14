@@ -37,7 +37,7 @@ function Sponsorships() {
   const sponsorImages = [
     { src: altium, alt: "Altium" },
     { src: bloomTechnical, alt: "Bloom Technical" },
-    { src: rockyMountain, alt: "Rocky Mountain Motion Controls" },
+    { src: RMMCLogo, alt: "Rocky Mountain Motion Controls" },
     // Add more sponsors as needed
   ];
 
