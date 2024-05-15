@@ -3,8 +3,7 @@ import emailjs from "@emailjs/browser";
 import Button from "./Button";
 import { teamimage, altium } from "../assets";
 import bloomTechnical from "../assets/BloomTechnicalLogo.png";
-// import rockyMountain from "src/assets/RMMCLogo";
-import { teamimage, RMMCLogo } from "../assets";
+import rockyMountain from "../assets/RMMCLogo";
 
 
 
@@ -37,7 +36,7 @@ function Sponsorships() {
   const sponsorImages = [
     { src: altium, alt: "Altium" },
     { src: bloomTechnical, alt: "Bloom Technical" },
-    { src: RMMCLogo, alt: "Rocky Mountain Motion Controls" },
+    { src: rockyMountain, alt: "Rocky Mountain Motion Controls" },
     // Add more sponsors as needed
   ];
 
