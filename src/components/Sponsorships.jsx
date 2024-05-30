@@ -3,9 +3,7 @@ import emailjs from "@emailjs/browser";
 import Button from "./Button";
 import { teamimage, altium } from "../assets";
 import bloomTechnical from "../assets/BloomTechnicalLogo.png";
-import rockyMountain from "../assets/RMMCLogo";
-
-
+import rockyMountain from "../assets/RMMCLogo.png";
 
 function Sponsorships() {
   const form = useRef();
