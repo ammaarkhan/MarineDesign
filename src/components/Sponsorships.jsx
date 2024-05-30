@@ -4,6 +4,7 @@ import Button from "./Button";
 import { teamimage, altium } from "../assets";
 import bloomTechnical from "../assets/BloomTechnicalLogo.png";
 import rockyMountain from "../assets/RMMCLogo.png";
+import engSoc from "src/assets/EngSocLogo.png";
 
 function Sponsorships() {
   const form = useRef();
@@ -35,6 +36,7 @@ function Sponsorships() {
     { src: altium, alt: "Altium" },
     { src: bloomTechnical, alt: "Bloom Technical" },
     { src: rockyMountain, alt: "Rocky Mountain Motion Controls" },
+    { src: engSoc, alt: "Engineering Society of UBC Okanagan" },
     // Add more sponsors as needed
   ];
 
