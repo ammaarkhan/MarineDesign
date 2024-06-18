@@ -4,7 +4,7 @@ import Button from "./Button";
 import { teamimage, altium } from "../assets";
 import bloomTechnical from "../assets/BloomTechnicalLogo.png";
 import rockyMountain from "../assets/RMMCLogo.png";
-import engSoc from "src/assets/EngSocLogo.png";
+import engSoc from "../assets/EngSocLogo.png";
 
 function Sponsorships() {
   const form = useRef();
@@ -63,7 +63,11 @@ function Sponsorships() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
           {/* Form container */}
           <div className="w-full md:w-1/2">
-            <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg mx-auto">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="w-full max-w-lg mx-auto"
+            >
               <div className="mb-6">
                 <label
                   htmlFor="name"
@@ -138,7 +142,11 @@ function Sponsorships() {
         <div className="flex flex-wrap justify-center items-center gap-8">
           {sponsorImages.map((sponsor, index) => (
             <div key={index} className="w-40 md:w-56">
-              <img src={sponsor.src} alt={sponsor.alt} className="w-full h-auto object-contain" />
+              <img
+                src={sponsor.src}
+                alt={sponsor.alt}
+                className="w-full h-auto object-contain"
+              />
             </div>
           ))}
         </div>
